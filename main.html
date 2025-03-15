@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sejam bem vindos a minha pagina</h1>
+    <br>
+    <p id="intro">Esta pagina é dedicada a pessoas que desejam se tornarem melhores</p>
+    <br>
+    <p>logo abaixao esta um botao caso a pessoa queira mostra algo de novo</p><br>
+    <script>
+        function message(){
+            var x = document.getElementById("intro");
+            var change = document.createElement("h1");
+            change.innerHTML="esta pagina é para pessoas gostosas como voce haha";
+            x.parentNode.replaceChild(change,x);
+        }
+    </script>
+    <button onclick="message()">mensagem</button>
+</body>
+</html>
